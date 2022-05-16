@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!-- 記載番号：2 -->
-    <title>FURIMA（フリマアプリ）</title>
+    <title>迷惑メール110番（情報共有アプリ）</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -33,19 +33,20 @@
       <section class="p-work-firstview">
         <div class="section-inner">
           <!-- 記載番号：2（記載番号2は5行目にもあるので気をつけてください） -->
-          <h2>FURIMA（フリマアプリ）</h2>
+          <h2>迷惑メール110番（情報共有アプリ）</h2>
           <div class="p-work-firstview__pict obj-fit-img">
-            <!-- images/01に配置した、FURIMAの画像（PC版）のパスを記載する -->
-            <img src="../images/work/01/07e28b007aa46136d1db95ff88ee5490.jpg" class="show-pc">
-            <!-- images/01に配置した、FURIMAの画像（SP版）のパスを記載する -->
-            <img src="../images/work/01/b3770770a6998f984db4164d7d1b9e1f.jpg" class="show-sp">
+            <!-- images/02に配置した、オリジナルアプリの画像（PC版）のパスを記載する -->
+            <img src="../images/work/03/junkmail110_pc.jpg" class="show-pc">
+            <!-- images/02に配置した、オリジナルアプリの画像（SP版）のパスを記載する -->
+            <img src="../images/work/02/junkmail110_phone.jpg
+            " class="show-sp">
           </div>
           <div class="p-work-firstview__text-area">
             <h3 class="p-work-firstview__text-titile">開発環境</h3>
             <!-- 記載番号：3 -->
-            <p class="p-work-firstview__text">Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello / AWS</p>
+            <p class="p-work-firstview__text">PHP / Laravel / MySQL / GitHub / Heroku / Visual Studio Code / AWS</p>
             <!-- 記載番号：4 -->
-            <p class="p-work-firstview__text-link"><a href="https://github.com/kanieksuke/furima-37215" target="_blank">https://github.com/kanieksuke/furima-37215</a></p>
+            <p class="p-work-firstview__text-link"><a href="https://github.com/kanieksuke/junkmail110" target="_blank">https://github.com/kanieksuke/junkmail110</a></p>
           </div>
         </div>
       </section>
@@ -58,12 +59,12 @@
                 <tr>
                   <th>制作時間</th>
                   <!-- 記載番号：5 -->
-                  <td>150時間</td>
+                  <td>80時間</td>
                 </tr>
                 <tr>
                   <th>URL</th>
                   <!-- 記載番号：6 -->
-                  <td><a href="https://furima-37215.herokuapp.com/" target="_blank">https://furima-37215.herokuapp.com/</a></td>
+                  <td><a href="https://junkmail110.herokuapp.com/" target="_blank">https://junkmail110.herokuapp.com/</a></td>
                 </tr>
                 <tr>
                   <th>ID</th>
@@ -79,35 +80,17 @@
             </li>
             <li class="p-work-summary__item">
               <h3>動作テスト</h3>
-              <h4>購入テスト用アカウント</h4>
+              <h4>テスト用アカウント</h4>
               <table class="p-work-summary__item-table">
                 <tr>
                   <th>mail</th>
                   <!-- 記載番号：9 -->
-                  <td>buyer@gmail.com</td>
+                  <td>user@gmail.com</td>
                 </tr>
                 <tr>
                   <th>PASS</th>
                   <!-- 記載番号：10 -->
-                  <td>buyer37215</td>
-                </tr>
-              </table>
-              <h4>購入テスト用カード情報</h4>
-              <table class="p-work-summary__item-table">
-                <tr>
-                  <th>番号</th>
-                  <!-- 記載番号：11 -->
-                  <td>4242424242424242</td>
-                </tr>
-                <tr>
-                  <th>期限</th>
-                  <!-- 記載番号：12 -->
-                  <td>12/24</td>
-                </tr>
-                <tr>
-                  <th>CVC</th>
-                  <!-- 記載番号：13 -->
-                  <td>123</td>
+                  <td>junkmail110</td>
                 </tr>
               </table>
             </li>
@@ -120,15 +103,13 @@
             <h2>OUTLINE<span>アプリケーションの概要</span></h2>
           </div>
           <div class="contents">
-            <!-- 記載番号：14 -->
+            <!-- 記載番号：11 -->
             <div class="p-work-outline__text">
               <p>
-                プログラミングスクールの最終課題制作としてフリーマーケットのアプリケーションを作成しました。
-                <br>
-                ユーザーを登録すると商品を出品できるようになります。自身が出品した商品は、編集と削除をすることができます。他のユーザーが出品した商品は、クレジットカードを用いて購入することができます。
+                有名企業を装って偽サイトに誘導し、個人情報を抜き取る事を目的とした所謂「なりすましメール」を共有するためのアプリです。
               </p>
               <p>
-                クレジットカード購入機能については、PAY.JPが提供しているAPIを使用しています。
+                一覧画面には検索フォームがあり、ここにメールのタイトルや本文の一部をコピペすると、すでに投稿されている該当のメールについての記事が閲覧できます。
               </p>
             </div>
           </div>
@@ -138,22 +119,49 @@
         <div class="section-inner">
           <ul class="p-work-about__list">
             <li class="p-work-about__item">
-              <h3>開発で苦労したこと</h3>
+              <h3>開発に至った経緯</h3>
+              <!-- 記載番号：12 -->
+              <div class="p-work-about__item-block">
+                <p>
+                  知らない番号から電話がかかってきた時、電話番号検索サイトの存在が非常にありがたいと感じてました。
+                </p>
+                <p>
+                  一方、なりすましメールの検索サイトは存在していなかったので、この電話番号検索サイトにインスピレーションを受けて開発を決意しました。
+                </p>
+                <p>
+                  なりすましメールは時々物凄く巧妙に作られているものがあり、本物ではないか不安になる時もあります。
+                </p>
+                <p>
+                  これらの情報を共有する事で、なりすましメールへの不安を一掃する効果が見込めます。
+                </p>
+              </div>
+            </li>
+            <li class="p-work-about__item">
+              <h3>開発で工夫したこと</h3>
               <div class="p-work-about__item-block p-work-about__item-block-2column">
                 <div class="p-work-about__item-block-pict obj-fit-img">
-                  <!-- images/01に配置した、記載内容を表す画像のパスを記載する -->
-                  <img src="../images/work/01/mysqlerror.png">
+                  <!-- images/02に配置した、記載内容を表す画像のパスを記載する -->
+                  <img src="../images/work/03/junkmail110_search.png">
                 </div>
-                <!-- 記載番号：15 -->
+                <!-- 記載番号：13 -->
                 <div class="p-work-about__item-block-text">
                   <p>
-                    商品購入機能のテストコードを記述する時に起きたエラーが印象に残っています。
+                    ・タイトルと記事、どちらでも検索にヒットするように実装
                   </p>
                   <p>
-                    エラー内容はMySQLに関するもので、テストの途中でデータベースに繋がらなくなり、しかもテストを重ねれば重ねるほど繋がりづらくなる、というものでした。
+                    利用するユーザーは、あまりコンピューターに詳しくない方が想定されます。
                   </p>
                   <p>
-                    今まで体験してきたエラーは必ず同じ挙動をし、正しいコードを記述すれば必ず解消される、というものだったので、サーバーの状態を確認するという、今までにない作業が必要となりました。結局、サーバーの読み込みを遅らせる事でMySQLに情報を送る事に成功し、想定通りの挙動である事を確認できました。
+                    「分からない時はとりあえずコピペ」と思っていただけるよう、検索範囲を広げました。
+                  </p>
+                  <p>
+                    ・ログインしなくても記事とコメントは閲覧可能
+                  </p>
+                  <p>
+                    上記の理由で、アプリにログインせずに利用するユーザーが一定数いる事を想定し、ログインしなくても記事、コメントは閲覧可能としてます。
+                  </p>
+                  <p>
+                    「とりあえずなりすましメールであるかどうかが分かればOK」の人と、「積極的に発信して注意喚起をしていきたい」人との住み分けを促しています。
                   </p>
                 </div>
               </div>
@@ -162,16 +170,16 @@
               <h3>今後実装したいと思っていること</h3>
               <div class="p-work-about__item-block p-work-about__item-block-2column">
                 <div class="p-work-about__item-block-pict obj-fit-img">
-                  <!-- images/01に配置した、記載内容を表す画像のパスを記載する -->
-                  <img src="../images/work/01/6f882bbbce073f89e7b66dd04b02732c.jpg">
+                  <!-- images/02に配置した、記載内容を表す画像のパスを記載する -->
+                  <img src="../images/work/03/junkmail110_edit.png">
                 </div>
-                <!-- 記載番号：16 -->
+                <!-- 記載番号：14 -->
                 <div class="p-work-about__item-block-text">
                   <p>
-                    商品画像を複数枚添付できる機能を実装したいと考えております。
+                    開発期間が短かったため、投稿記事の編集、削除といった基本的な機能が未実装なので、まずはこの辺りから手を加えたいです。
                   </p>
                   <p>
-                    商品を出品する際、商品の情報とともに商品画像を添付していただく仕様となっていますが、商品によってはさまざまな角度で見たい、または見て欲しいという欲求が出てくる事が予想されますので、それを解決できる仕組みを考えていこうと思っております。
+                    また、なりすましメールの流動性の高さを考慮し、電話番号検索サイト同様、メールが送られてきた日時を集計する機能を実装したいと考えております。
                   </p>
                 </div>
               </div>
@@ -210,7 +218,7 @@
                   <!-- 記載番号：17 -->
                   <h3>マモン・クエスト（節約ゲームアプリ）</h3>
                   <!-- 記載番号：18 -->
-                  <p>Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello / AWS </p>
+                  <p>Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello / AWS</p>
                 </div>
                 <div class="p-work-others__item-btn-block">
                   <a href="02.html" class="button">More</a>
